@@ -32,7 +32,7 @@ The measures are three-axial linear body acceleration, three-axial linear total 
 Fortunately, The dataset is already prepared and splitted into a training and a test sets for us. In reality, most of the time is spent on fetching, preparing, cleaning the data.
 We will split the test dataset to have some data for validation set to serve the finetuning of our classifers, and keep the test set for final classifiers evaluation.
 
-The following script reads the data, and prepares it as a Numpy array. The script is borrowed from [this awesome article](http://ataspinar.com/2018/04/04/machine-learning-with-signal-processing-techniques/).
+The following script reads the data, and prepares it as a Numpy array. The script is borrowed from [this awesome article](https://ataspinar.com/2018/04/04/machine-learning-with-signal-processing-techniques/).
 
 
 
@@ -98,7 +98,7 @@ test_labels = read_labels(LABELFILE_TEST)
 ```
 
 ## 2. Features extraction
-Once our data is loaded, we are ready to extract features from it. We will extract two type of features : temporal features which are extracted from the time domain of the signals, and spectral features which are extracted from the frequency domain. We hope that both types carries enough information during our classification task. Most of described and used features are taken from a master thesis that you can enjoy reading [here](http://sal.aalto.fi/publications/pdf-files/tsep16_public.pdf).
+Once our data is loaded, we are ready to extract features from it. We will extract two type of features : temporal features which are extracted from the time domain of the signals, and spectral features which are extracted from the frequency domain. We hope that both types carries enough information during our classification task. Most of described and used features are taken from a master thesis that you can enjoy reading [here](https://sal.aalto.fi/publications/pdf-files/tsep16_public.pdf).
 
 ### 2.1 Temporal features
 The most obvious way to gain information from a signal is to extract features from its raw representation as a time series. The processed time series can be described throiugh statstical features. Different features describe dierent aspects, so calculating several features from one signal can give comprehensive description of that signal. We will use the following time domain related features:

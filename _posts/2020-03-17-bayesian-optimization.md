@@ -136,6 +136,6 @@ The Bayesian Optimization has been used in to solve wide range of optimization p
 
 ### References
 
-1. [Bayesian optimization](http://krasserm.github.io/2018/03/21/bayesian-optimization/)
+1. [Bayesian optimization](https://krasserm.github.io/2018/03/21/bayesian-optimization/)
 2. [A Tutorial on Bayesian Optimization](https://arxiv.org/abs/1807.02811)
 3. [Hyperparameter optimization for machine learning models based on Bayesian optimization](https://www.researchgate.net/publication/332557186_Hyperparameter_optimization_for_machine_learning_models_based_on_Bayesian_optimization)
