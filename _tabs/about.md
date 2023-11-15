@@ -60,7 +60,7 @@ As a result of my never ending curiosity, I have practical experience with a wid
 
 # Certificates :
 
-[![png](assets/img/certs/Azure-DP100.png)](https://learn.microsoft.com/api/credentials/share/en-us/salihbout/555C43219EDD19B8?sharingId=8FE9B22AD8533882) | [![png](asasets/img/certs/AWS-SAA-CO2.png)](https://www.credly.com/badges/24b602c2-192d-413e-b398-e5dac70f9cf0)
+![jpg](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/certs/Azure-DP100.png)](https://learn.microsoft.com/api/credentials/share/en-us/salihbout/555C43219EDD19B8?sharingId=8FE9B22AD8533882) | [![jpg](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/certs/AWS-SAA-CO2.png)](https://www.credly.com/badges/24b602c2-192d-413e-b398-e5dac70f9cf0)
 
 
 # MOOCs I’ve completed :

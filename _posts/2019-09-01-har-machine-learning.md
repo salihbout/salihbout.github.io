@@ -103,7 +103,7 @@ Once our data is loaded, we are ready to extract features from it. We will extra
 ### 2.1 Temporal features
 The most obvious way to gain information from a signal is to extract features from its raw representation as a time series. The processed time series can be described throiugh statstical features. Different features describe dierent aspects, so calculating several features from one signal can give comprehensive description of that signal. We will use the following time domain related features:
 
-<img src="/img/posts/har-ml/temporal-features.png" alt="Temporal features">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assetshttps://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/temporal-features.png" alt="Temporal features">
 
 The mean, the standard deviation and RMS are self-explanatory. Skewness, kurtosis and crest factor as well as L, S and I factors describe the shape of distribution. Skewness measure the symmetry of the distribution which is symmetric about the mean has a skewness close to zero. Kurtosis measure the weight of tails of the distribution. Normal distribution has a kurtosis value close to three, whereas distributions with smaller tails have larger and flatter distributions have smaller values of kurtosis. Crest factor as well as L, S and I factors all describe in their own way, how much the extreme values dier from the rest of the population.
 
@@ -157,7 +157,7 @@ def get_psd_values(y_values, f_s):
 
 Some of the used frequency domain features corespond to the time domain feature and they are described in the following picture.
 
-<img src="/img/posts/har-ml/spectral-features.png" alt="Spectral features">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/spectral-features.png" alt="Spectral features">
 
 Moreover, we can add other spectral features like [spectral flatness](https://en.wikipedia.org/wiki/Spectral_flatness), spectral rolloff which determines the frequency below which 85% of the spectrum's energy is located.
 
@@ -268,7 +268,7 @@ for clf, name in tqdm(models):
 
 Once models are trained, we can plot their scores and training time, I have also trained the proposed models using temporal and spectral features to se which set of features could perform better.
 
-<img src="/img/posts/har-ml/models-scores.PNG" alt="Classifiers score">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/models-scores.PNG" alt="Classifiers score">
 
 
 As it's expected the ensemble model perform better in this classification task. XGBoost has the highest score, but it took the longest to train.
@@ -326,12 +326,12 @@ best = fmin(fn=objective,
 
 After finishing the space search for optimal parameters, the best set of paramaters are returned and used to train the best version of our classifier, we provide an evaluation set to track the progress of our model's learning. Then, we can plot the classification error and the loss in our predictions. 
 
-<img src="/img/posts/har-ml/xgboost-loss.PNG" alt="XGBoost loss and error">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/xgboost-loss.PNG" alt="XGBoost loss and error">
 
 It seems like out model stopped learning after iteration 20, Thus, It would be better to have an early stoping around 20.
 One of the advantages of XGBoost is its interpretability through features importance. We can see what are the most useful features for performing predictions on the leaf nodes of our models' estimators.
 
-<img src="/img/posts/har-ml/features-importance.png" alt="XGBoost features importance">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/features-importance.png" alt="XGBoost features importance">
 
 The last three component of our signal seem to have most relevant information when classifying humain activity. 
 Now let's look how our model did with respect to each class in our dataset, this can be summarized in the classification report provided by scikit-learn.
@@ -354,7 +354,7 @@ weighted avg       0.92      0.92      0.92      2947
 
 We can also look at the famous confusion matrix to evaluate the performance of our classifier on the test set.
 
-<img src="/img/posts/har-ml/confusion-matrix.PNG" alt="Confusion matrix">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/har-ml/confusion-matrix.PNG" alt="Confusion matrix">
 
 Our classifier is able to recognize human activity with a pretty good accuracy across all activities.
 

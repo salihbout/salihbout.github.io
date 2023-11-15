@@ -121,11 +121,11 @@ We consider the following function :
 $$ f(X) = \sin({2 \pi X}) + X^2 + 0.5X + \exp({-X^2 \over 10})  + {1 \over X^2 + 1} $$
 
 
-<img src="/img/posts/bo/function.png" alt="Function">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/bo/function.png" alt="Function">
 
 We will treat it as black box and approximate it using Bayesian Optimization. We assume that we have two initial samples. The main goal is find the global optimum in few number of steps. The following picture show the result of Bayesian optimization using different acquisition function we presented previously. 
 
-<img src="/img/posts/bo/results.png" alt="Function">
+<img src="https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/bo/results.png" alt="Function">
 
 In order to determoine the best acquisition function in our case, we compared the three acquisition functions with the same Gaussian process posterior while optimizing the same function. As we can see, after 10 iterations, the EI and GP-UCB are capable of finding the global optimum solution, while PI  function got stuck in the local optimum value.
 

@@ -154,7 +154,7 @@ plt.show()
 ```
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_12_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_12_0.png)
     
 
 The next few cells execute the usual machine learning process, preparing the data, finetune paramters using randomized grid search and use the best model to be evaluated on the test dataset.   
@@ -242,7 +242,7 @@ print('\tROC-AUC_test:    %.4f\t\tF1_test:         %.4f\t\tMCC_test: %.4f' %\
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_16_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_16_0.png)
     
 
 
@@ -275,7 +275,7 @@ shap.summary_plot(shap_values[1], X_test, plot_type="bar")
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_23_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_23_0.png)
     
 
 
@@ -289,7 +289,7 @@ shap.summary_plot(shap_values[1], X_test)
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_25_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_25_0.png)
     
 
 
@@ -302,7 +302,7 @@ shap.dependence_plot('ca', shap_values[1], X_test, interaction_index=None)
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_27_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_27_0.png)
     
 
 
@@ -319,7 +319,7 @@ shap.dependence_plot('ca', shap_values[1], X_test)
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_29_1.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_29_1.png)
     
 
 
@@ -416,7 +416,7 @@ shap.decision_plot(expected_value, shap_values[1][sample_test_idx],\
 
 
     
-![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/master/assets/img/posts/interpret-ml/output_36_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/interpret-ml/output_36_0.png)
     
 
 
@@ -36146,7 +36146,7 @@ explainer.explain_instance(X_test[X_test.index==10].values[0],\
 /* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// https://github.com/rwaldron/tc39-notes/blob/master/es6/2014-09/sept-25.md#510-globalasap-for-enqueuing-a-microtask
+	// https://github.com/rwaldron/tc39-notes/blob/main/es6/2014-09/sept-25.md#510-globalasap-for-enqueuing-a-microtask
 	var $export = __webpack_require__(15);
 	var microtask = __webpack_require__(222)();
 	var process = __webpack_require__(11).process;
@@ -36476,7 +36476,7 @@ explainer.explain_instance(X_test[X_test.index==10].values[0],\
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
-	 * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
+	 * https://raw.github.com/facebook/regenerator/main/LICENSE file. An
 	 * additional grant of patent rights can be found in the PATENTS file in
 	 * the same directory.
 	 */
@@ -73270,7 +73270,7 @@ explainer.explain_instance(X_test[X_test.index==219].values[0],\
 /* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// https://github.com/rwaldron/tc39-notes/blob/master/es6/2014-09/sept-25.md#510-globalasap-for-enqueuing-a-microtask
+	// https://github.com/rwaldron/tc39-notes/blob/main/es6/2014-09/sept-25.md#510-globalasap-for-enqueuing-a-microtask
 	var $export = __webpack_require__(15);
 	var microtask = __webpack_require__(222)();
 	var process = __webpack_require__(11).process;
@@ -73600,7 +73600,7 @@ explainer.explain_instance(X_test[X_test.index==219].values[0],\
 	 * All rights reserved.
 	 *
 	 * This source code is licensed under the BSD-style license found in the
-	 * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
+	 * https://raw.github.com/facebook/regenerator/main/LICENSE file. An
 	 * additional grant of patent rights can be found in the PATENTS file in
 	 * the same directory.
 	 */

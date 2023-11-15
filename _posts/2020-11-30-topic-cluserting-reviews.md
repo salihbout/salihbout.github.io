@@ -21,12 +21,12 @@ There are mainly two approaches that can be used to find topics in text data, To
 
 In the following analysis, I used a dataset of 5000 recent reviews from the Netflix mobile app on Google Play. The following figure shows the daily number of reviews with a score of 1, it gives us an idea about the amount of data we are dealing with.
     
-![png](./assets/img/posts/reviews-clustering/output_15_1.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_15_1.png)
     
  
 We can also look at the review length distribution. As we can see, usually people submit short to medium size reviews (under 50 words).
 
-![png](./assets/img/posts/reviews-clustering/output_21_1.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_21_1.png)
     
 
 I used a maximum length of 48 word for all reviews, longer reviews are discarded from the dataset.
@@ -69,14 +69,14 @@ In order to have a good LDA model, we need to find a suitable number of topics t
 I ran multiple LDA models with different number of topics, and picked the one with the highest score. We could also finetune other hyperparameters like document-topic density (alpha) or word-topic density (beta), however, I keep it simple and only finetune the number of topics.
 
     
-![png](./assets/img/posts/reviews-clustering/output_49_1.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_49_1.png)
     
 
 
 We pick the number of topics with the highest coherence score: ```K=30```
 
     
-![png](./assets/img/posts/reviews-clustering/output_51_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_51_0.png)
     
 
 
@@ -101,7 +101,7 @@ We adapt [rwalk's implementation](https://github.com/rwalk/gsdmm) for our STTM.
 we start with a ```K = 30``` number of topics and let GSDMM find the optimal number of topics.
 
     
-![png](./assets/img/posts/reviews-clustering/output_57_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_57_0.png)
     
 
 Similar to LDA, STTM did a good job in highlighting the main topics.
@@ -177,13 +177,13 @@ Let's fix those parameters and run the HDBSCAN on the embeddings. We choose ```m
 Now we can visualize the embeddings in a 2D space  with their associated clusters to have an idea of how the clusters are dense.
 
     
-![png](./assets/img/posts/reviews-clustering/output_73_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_73_0.png)
     
 
 In order to better evaluate clusters and highlight the best coherent ones, we will sort them by size (i.e, the number of reviews in a cluster), and the median outlier score for the items in the clusters. this score can be found in the attribute ```outlier_scores_``` in the clusterer object. it provides a value for each sample in the original dataset that was fit with the clusterer. The higher the score, the more likely the point is to be an outlier. Let's explore the results! we remove the clustering representing the noisy points and order the clusters by their size or how dense they are.
 
     
-![png](./assets/img/posts/reviews-clustering/output_75_0.png)
+![png](https://raw.githubusercontent.com/salihbout/salihbout.github.io/main/assets/img/posts/reviews-clustering/output_75_0.png)
     
 
 
